@@ -1,12 +1,15 @@
-import React from 'react'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Profile from './components/Profile'
 const App = () => {
   return (
-    <div className='w-screen h-screen bg-gray-100'>
-      <div className=' m-auto bg-black '>
-
-
-      </div>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/profile/:userName' element={<Profile/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
