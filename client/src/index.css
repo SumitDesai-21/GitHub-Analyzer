@@ -3,4 +3,14 @@
 
 *{
     box-sizing: border-box; /* padding & border included inside width/height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #333;
+    padding: 23px;
+    text-align: center;
 }
